@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        header {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Website</h1>
+    </header>
+
+    <main>
+        <h2>Click the button to change the text!</h2>
+        <p id="demo">Hello, World!</p>
+        <button onclick="changeText()">Change Text</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Interactive Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "Text changed!";
+        }
+    </script>
+
+</body>
+</html>
